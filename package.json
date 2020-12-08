@@ -22,7 +22,8 @@
     "rollup-plugin-auto-external": "^2.0.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "environment.js"
   ],
   "license": "MIT"
 }
