@@ -3,12 +3,8 @@
   "version": "0.2.0",
   "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
   "repository": "vladshcherbin/modules",
-  "exports": {
-    "./environment": "./dist/environment.js",
-    "./package.json": "./package.json"
-  },
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf environment.js",
     "build": "rollup -c",
     "lint": "eslint src",
     "postpublish": "yarn clean",
