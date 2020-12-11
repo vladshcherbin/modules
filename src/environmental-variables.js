@@ -1,8 +1,8 @@
 import dotenv from 'dotenv-safe'
 
-export default function loadEnvironmentalVariables() {
+export default function loadEnvironmentalVariables(directory) {
   dotenv.config({
-    path: `${__dirname}/.env`,
-    sample: `${__dirname}/.env.example`
+    path: `${directory}/.env`,
+    sample: `${directory}/.env.example`
   })
 }
