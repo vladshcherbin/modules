@@ -1,4 +1,3 @@
-import resolve from '@rollup/plugin-node-resolve'
 import autoExternal from 'rollup-plugin-auto-external'
 
 export default [
@@ -9,12 +8,11 @@ export default [
       format: 'es'
     },
     plugins: [
-      resolve(),
       autoExternal()
     ]
   },
   {
-    input: 'src/environment/index.js',
+    input: 'src/environment.js',
     output: {
       file: 'environment.js',
       format: 'es'
