@@ -1,6 +1,6 @@
 {
   "name": "@shcherbin/modules",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
   "repository": "vladshcherbin/modules",
   "main": "dist/index.js",
