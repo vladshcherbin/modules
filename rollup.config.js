@@ -1,24 +1,18 @@
 import autoExternal from 'rollup-plugin-auto-external'
 
-export default [
-  {
-    input: 'src/index.js',
-    output: {
-      file: 'dist/index.js',
-      format: 'es'
+export default {
+  input: 'src/index.js',
+  output: [
+    {
+      file: 'dist/index.cjs.js',
+      format: 'cjs'
     },
-    plugins: [
-      autoExternal()
-    ]
-  },
-  {
-    input: 'src/environment.js',
-    output: {
-      file: 'environment.js',
+    {
+      file: 'dist/index.es.js',
       format: 'es'
-    },
-    plugins: [
-      autoExternal()
-    ]
-  }
-]
+    }
+  ],
+  plugins: [
+    autoExternal()
+  ]
+}
