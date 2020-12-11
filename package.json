@@ -4,6 +4,7 @@
   "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
   "repository": "vladshcherbin/modules",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist environment.js",
     "build": "rollup -c",
@@ -11,22 +12,25 @@
     "postpublish": "yarn clean",
     "prepublishOnly": "yarn lint && yarn clean && yarn build"
   },
-  "dependencies": {
-    "dotenv-safe": "^8.2.0",
-    "koa-send": "^5.0.1"
-  },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^11.0.0",
+    "dotenv-safe": "^8.2.0",
     "eslint": "^7.15.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
+    "knex": "^0.21.12",
+    "knex-query-logger": "^0.1.0",
+    "koa-send": "^5.0.1",
+    "objection": "^2.2.3",
     "rimraf": "^3.0.2",
     "rollup": "^2.34.2",
     "rollup-plugin-auto-external": "^2.0.0"
   },
   "peerDependencies": {
     "dotenv-safe": "8.x",
-    "koa-send": "5.x"
+    "knex": "0.x",
+    "knex-query-logger": "0.x",
+    "koa-send": "5.x",
+    "objection": "2.x"
   },
   "files": [
     "dist",
