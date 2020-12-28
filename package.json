@@ -32,6 +32,13 @@
     "koa-send": "5.x",
     "objection": "2.x"
   },
+  "optionalDependencies": {
+    "dotenv-safe": "8.x",
+    "knex": "0.x",
+    "knex-query-logger": "0.x",
+    "koa-send": "5.x",
+    "objection": "2.x"
+  },
   "files": [
     "dist",
     "environment.js"
