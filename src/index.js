@@ -1,9 +1,3 @@
-import connectDatabase from './database'
-import loadEnvironmentalVariables from './environmental-variables'
-import staticFile from './static-file'
-
-export {
-  connectDatabase,
-  loadEnvironmentalVariables,
-  staticFile
-}
+export { default as connectDatabase } from './database'
+export { default as loadEnvironmentalVariables } from './environmental-variables'
+export { default as staticFile } from './static-file'
